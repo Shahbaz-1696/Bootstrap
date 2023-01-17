@@ -16,7 +16,6 @@
 </head>
 
 <body>
-
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
@@ -307,18 +306,18 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             $("#mycarousel").carousel({ interval: 2000 });
-            $("#carouselButton").click(function () {
+            $("#carouselButton").click(function(){
                 if ($("#carouselButton").children("span").hasClass('fa-pause')) {
                     $("#mycarousel").carousel('pause');
                     $("#carouselButton").children("span").removeClass('fa-pause');
                     $("#carouselButton").children("span").addClass('fa-play');
                 }
-                else if ($("#carouselButton").children("span").hasClass('fa-play')) {
+                else if ($("#carouselButton").children("span").hasClass('fa-play')){
                     $("#mycarousel").carousel('cycle');
                     $("#carouselButton").children("span").removeClass('fa-play');
-                    $("#carouselButton").children("span").addClass('fa-pause');
+                    $("#carouselButton").children("span").addClass('fa-pause');                    
                 }
             });
         });
